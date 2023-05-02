@@ -1,0 +1,10 @@
+/data
+/model_weight
+/visiualization
+/mae_test
+
+*.mp4
+*.pth
+*.txt
+*.pt
+*.out
