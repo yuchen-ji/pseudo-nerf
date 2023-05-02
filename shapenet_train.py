@@ -140,7 +140,7 @@ def main():
         for key, value in info.items():
             args.__dict__[key] = value
     
-    # different model use different data, prevent cpu跑满，导致GPU效率低
+    # different model use different data, 避免CPU跑满，导致GPU效率低
     args.dataset_root="./data/shapenet/chairs_{}".format(args.gpu_id+1)
 
     device = torch.device("cuda:{}".format(args.gpu_id) if torch.cuda.is_available() else "cpu")
